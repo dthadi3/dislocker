@@ -13,6 +13,16 @@ jobs:
     - os: linux
       dist: xenial
     - os: osx
+# Added power jobs
+    - os: linux
+      arch: ppc64le
+      disk: focal
+    - os: linux
+      arch: ppc64le
+      disk: bionic
+    - os: linux
+      arch: ppc64le
+      dist: xenial
 
 before_install:
     - echo $PATH
